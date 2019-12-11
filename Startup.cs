@@ -10,10 +10,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using SmukToolsApp.Data;
-using SmukToolsApp.Models;
+using XtendersProject.Data;
 
-namespace SmukToolsApp
+namespace XtendersProject
 {
     public class Startup
     {

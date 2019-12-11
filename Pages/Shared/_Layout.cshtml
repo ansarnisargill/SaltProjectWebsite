@@ -6,22 +6,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] </title>
-    <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-    </environment>
-    <environment exclude="Development">
-        <link rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-fallback-test-class="sr-only"
-              asp-fallback-test-property="position" asp-fallback-test-value="absolute" crossorigin="anonymous"
-              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" />
-    </environment>
-    <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" type="text/css" href="~/css/hello.week.min.css" />
-    <link rel="stylesheet" type="text/css" href="~/css/hello.week.theme.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/linways/table-to-excel@v1.0.4/dist/tableToExcel.js"></script>
-    <script type="text/javascript" src="~/js/hello.week.min.js"></script>
-    <script type="text/javascript" src="~/js/DateFormator.js"></script>
+    @*<link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">*@
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="~/css/cards.css" rel="stylesheet" />
 
 
 
@@ -29,93 +17,101 @@
 
 <body onload="Load()">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
+
+        <!-- START NAV -->
+        <nav class="navbar">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">W-Schedule</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="../">
+                        <img src="../images/bulma.png" alt="Logo">
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item is-active">
+                            Home
+                        </a>
+                        <a class="navbar-item">
+                            Examples
+                        </a>
+                        <a class="navbar-item">
+                            Features
+                        </a>
+                        <a class="navbar-item">
+                            Team
+                        </a>
+                        <a class="navbar-item">
+                            Archives
+                        </a>
+                        <a class="navbar-item">
+                            Help
+                        </a>
 
-
-
-
-
-                @{
-                    byte[] check;
-                    Context.Session.TryGetValue("Id", out check);
-                    if (check != null)
-                    {
-
-                        Context.Session.TryGetValue("Role", out byte[] role);
-                        string result = System.Text.Encoding.UTF8.GetString(role);
-                        if (result == "Admin")
-                        {
-                            <div class="collapse navbar-collapse">
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/Employees/Index">Employees</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/Roles/Index">Roles</a>
-                                    </li>
-                                </ul>
+                      
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                Account
+                            </a>
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">
+                                    Dashboard
+                                </a>
+                                <a class="navbar-item">
+                                    Profile
+                                </a>
+                                <a class="navbar-item">
+                                    Settings
+                                </a>
+                                <hr class="navbar-divider">
+                                <div class="navbar-item">
+                                    Logout
+                                </div>
                             </div>
-                        }
-                        else
-                        {
-                            <div class="collapse navbar-collapse">
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/UserApplications">User Applications</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        }
-                        <a href="/UserAuth/Logout" class="btn btn-outline-success float-right">Log Out</a>
-
-                    }
-                }
-
-
-
-
-
-
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
+        <!-- END NAV -->
+
+
+
+
+
+
+
+
+
     </header>
     <partial name="_CookieConsentPartial" />
-    <main role="main" class="pb-3">
-        <div class="container">
-            @RenderBody()
-        </div>
-    </main>
+
+    @RenderBody()
 
 
-    <footer class="border-top footer text-muted">
+
+    <footer class="footer">
         <div class="container">
-            &copy; 2019 - Ansar - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <div class="content has-text-centered">
+                <div class="soc">
+                    <a href="#"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
         </div>
     </footer>
 
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js" asp-fallback-test="window.jQuery" crossorigin="anonymous"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal" crossorigin="anonymous"
-                integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
-        </script>
-    </environment>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/bulma.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
     @RenderSection("Scripts", required: false)
 </body>
 

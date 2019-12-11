@@ -6,11 +6,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using SmukToolsApp.Data;
-using SmukToolsApp.Models;
-using SmukToolsProject.Models;
+using XtendersProject.Data;
 
-namespace SmukToolsApp.Pages
+namespace XtendersProject.Pages
 {
     public class IndexModel : PageModel
     {
@@ -18,18 +16,8 @@ namespace SmukToolsApp.Pages
 
         public IActionResult OnGet()
         {
-            if (HttpContext.Session.GetInt32("Id") != null)
-            {
-                if (HttpContext.Session.GetString("Role") == "Admin")
-                {
-                    return RedirectToPage("/Admin");
-                }
+           
                 return Page();
-            }
-            else
-            {
-               return Redirect("/UserAuth/Login");
-            }
         }
         public IndexModel(Context contex)
         {

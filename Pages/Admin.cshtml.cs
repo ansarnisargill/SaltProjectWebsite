@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace EmployeeShiftManagement.Pages
+namespace XtendersProject.Pages
 {
     public class AdminModel : PageModel
     {

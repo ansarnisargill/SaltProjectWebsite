@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using SmukToolsApp.Data;
+using XtendersProject.Data;
 
-namespace SmukToolsApp
+namespace XtendersProject
 {
     public class Program
     {
@@ -24,7 +24,7 @@ namespace SmukToolsApp
                 try
                 {
                     var context = services.GetRequiredService<Context>();
-                    ToolInitializer.Initialize(context);
+                    DataInitializer.Initialize(context);
                 }
                 catch (Exception ex)
                 {
