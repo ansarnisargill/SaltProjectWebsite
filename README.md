@@ -1,1 +1,1 @@
-# SaltProjectWebsite
+# StudentEmployeeManagementApp
