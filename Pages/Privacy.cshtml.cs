@@ -9,8 +9,9 @@ namespace XtendersProject.Pages
 {
     public class PrivacyModel : PageModel
     {
-        public void OnGet()
+        public IActionResult OnGet()
         {
+            return Page();
         }
     }
 }

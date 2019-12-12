@@ -1,5 +1,5 @@
 body {
-background: #041221;
+background: #f5f6f8;
 }
 /* Card start*/
 .card {overflow:hidden}
@@ -44,7 +44,7 @@ position: absolute;
 animation: rotating 15s linear infinite;
 }
 .flow-3 {
-background: #42eef4;
+background: #e7be38;
 position: absolute;
 -webkit-animation: rotating 7s linear infinite;
 -moz-animation: rotating 7s linear infinite;

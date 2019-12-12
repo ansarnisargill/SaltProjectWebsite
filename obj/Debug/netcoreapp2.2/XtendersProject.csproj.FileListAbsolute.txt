@@ -31,3 +31,4 @@ C:\Users\it\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\XtendersProject.V
 C:\Users\it\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\XtendersProject.dll
 C:\Users\it\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\XtendersProject.pdb
 C:\Users\it\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\XtendersProject.csproj.CopyComplete
+C:\Users\it\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\Razor\Pages\Catalogue.cshtml.g.cs
