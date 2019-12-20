@@ -8,14 +8,13 @@
     <title>@ViewData["Title"] </title>
     @*<link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">*@
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="~/css/cards.css" rel="stylesheet" />
     <link href="~/css/landing.css" rel="stylesheet" />
 
 
 </head>
 
-<body onload="Initialize()"> 
+<body onload="Initialize()">
     <partial name="_CookieConsentPartial" />
 
     <header>
@@ -26,7 +25,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="/index">
-                        <img src="../images/bulma.png" alt="Xtenders International Logo">
+                        <img src="../images/xtenders.png" alt="Xtenders International Logo">
                     </a>
                     <span class="navbar-burger burger" data-target="navbarMenu">
                         <span></span>
@@ -86,6 +85,7 @@
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/js/bulma.js"></script>
+   
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
