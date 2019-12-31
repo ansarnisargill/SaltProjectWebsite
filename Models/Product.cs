@@ -9,22 +9,15 @@ namespace XtendersProject.Models
 
         [Key]
         public int ID { get; set; }
-        [Display(Name = "Shift Start")]
+        [Display(Name = "Product Name")]
         [Required]
-        public TimeSpan StartingTime { get; set; }
-        [Display(Name = "Shift End")]
+        public string Name { get; set; }
+        [Display(Name = "Product Description")]
         [Required]
-        public TimeSpan EndingTime { get; set; }
-        [Display(Name = "Is Morning Shift?")]
+        public string Description { get; set; }
+        [Display(Name = "Picture URL")]
         [Required]
-        public bool IsMorningShift { get; set; }
-        [Display(Name = "Min Requirement")]
-        [Required]
-        public int MinimumRequirement { get; set; }
-        [Display(Name = "Max Requirement")]
-        [Required]
-        public int MaximumRequirement { get; set; }
-        [Display(Name = "Shift Date")]
-        public DateTime Date { get; set; }
+        public string PicUrl { get; set; }
+        public DateTime AddedDate { get; set; }=DateTime.Now;
     }
 }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] </title>
     @*<link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">*@
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="~/css/bulma.css" />
     <link href="~/css/cards.css" rel="stylesheet" />
     <link href="~/css/landing.css" rel="stylesheet" />
 
@@ -63,10 +63,7 @@
         <div class="container">
             <div class="content has-text-centered">
                 <div class="soc">
-                    <a href="#"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    <a href="/"> Xenders International<i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
                 </div>
 
             </div>
@@ -74,9 +71,7 @@
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="~/js/bulma.js"></script>
-
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script defer src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
 
