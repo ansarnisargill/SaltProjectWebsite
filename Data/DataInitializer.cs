@@ -22,7 +22,7 @@ namespace XtendersProject.Data
                 var data = new HomePageData()
                 {
                     TagLine = "The new standard in < Salt Artifacts >",
-                     MainIntro="At Xtenders We produce best salt products from pure Hamalyian Salt Extracted from Pakistans BIGGEST salt mines"
+                    MainIntro = "At Xtenders We produce best salt products from pure Hamalyian Salt Extracted from Pakistans BIGGEST salt mines"
                 };
                 context.HomeData.Add(data);
             }

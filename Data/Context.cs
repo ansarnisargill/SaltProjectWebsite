@@ -5,19 +5,9 @@ namespace XtendersProject.Data
 {
     public class Context : DbContext
     {
-        public Context(DbContextOptions<Context> options)
-            : base(options)
-        {
-        }
-
+        public Context(DbContextOptions<Context> options) : base(options) { }
         public DbSet<Product> Products { get; set; }
-        public DbSet<HomePageData> HomeData { get; set; } 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-           
-        }
-
-
-        
+        public DbSet<HomePageData> HomeData { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder) { }
     }
 }
