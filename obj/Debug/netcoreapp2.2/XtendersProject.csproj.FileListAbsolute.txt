@@ -55,6 +55,7 @@ C:\Users\Ansar\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\Razor\Pages\Ad
 C:\Users\Ansar\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\Razor\Pages\Admin\Products\Edit.g.cshtml.cs
 C:\Users\Ansar\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\Razor\Pages\Admin\Products\Index.g.cshtml.cs
 C:\Users\Ansar\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\Razor\Pages\Catalogue.g.cshtml.cs
+C:\Users\Ansar\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\Razor\Pages\Contact.g.cshtml.cs
 C:\Users\Ansar\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\Razor\Pages\Error.g.cshtml.cs
 C:\Users\Ansar\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\Razor\Pages\Index.g.cshtml.cs
 C:\Users\Ansar\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\Razor\Pages\Privacy.g.cshtml.cs
@@ -70,3 +71,4 @@ C:\Users\Ansar\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\XtendersProjec
 C:\Users\Ansar\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\XtendersProject.dll
 C:\Users\Ansar\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\XtendersProject.pdb
 C:\Users\Ansar\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\XtendersProject.csproj.CopyComplete
+C:\Users\Ansar\Desktop\SaltProjectWebsite\obj\Debug\netcoreapp2.2\Razor\Pages\About.g.cshtml.cs
